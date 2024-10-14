@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 1345943282138014167}
   - component: {fileID: 3444686158330356048}
   m_Layer: 0
-  m_Name: Enemy_Turret
+  m_Name: Enemy_Turret_Boss
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27364eefd6dd0341ba72a3bfc0d9727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 400
+  MaxHealth: 1000
   CriticalHealthRatio: 0.3
 --- !u!114 &3464315327790461765
 MonoBehaviour:
@@ -338,7 +338,7 @@ MonoBehaviour:
   TurretPivot: {fileID: 7886326314632062837}
   TurretAimPoint: {fileID: 6571005840976436832}
   Animator: {fileID: 7886326314639247517}
-  AimRotationSharpness: 5
+  AimRotationSharpness: 10
   LookAtRotationSharpness: 2.5
   DetectionFireDelay: 1.1
   AimingTransitionBlendTime: 1
@@ -1434,11 +1434,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6902821650146442548, guid: 80a1c11596afc5b4e99fcd0cc136f3ed,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f881f44dd64914b41a0691c81745c200, type: 2}
     - target: {fileID: 6989503427151715484, guid: 80a1c11596afc5b4e99fcd0cc136f3ed,
         type: 3}
       propertyPath: ShapeModule.angle
@@ -1591,18 +1586,6 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: d57ebae9f701b57448648b380d0beb65, type: 2}
-    - target: {fileID: 13700000, guid: fad35a70731ab804c975c717ee8862a5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f881f44dd64914b41a0691c81745c200, type: 2}
-    - target: {fileID: 13700002, guid: fad35a70731ab804c975c717ee8862a5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f881f44dd64914b41a0691c81745c200, type: 2}
-    - target: {fileID: 13700004, guid: fad35a70731ab804c975c717ee8862a5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f881f44dd64914b41a0691c81745c200, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
