@@ -149,8 +149,8 @@ MonoBehaviour:
     type: 3}
   EnemyPrefab2: {fileID: 2015434656898269652, guid: 25a1b0efadb966e44889fce712c8ff8d,
     type: 3}
-  NumberOfEnemiesToSpawn: 2
-  SpawnRadius: 5
+  NumberOfEnemiesToSpawn: 5
+  SpawnRadius: 20
 --- !u!1001 &43227310
 PrefabInstance:
   m_ObjectHideFlags: 0
