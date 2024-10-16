@@ -99,7 +99,7 @@ namespace Unity.FPS.UI
 
             if (isActiveWeapon)
             {
-                AmmoFillImage.color = new Color(0.68f, 0.85f, 0.90f); // Light blue color
+                AmmoFillImage.color = new Color(0.68f, 0.85f, 0.90f, 0.5f); // Light blue color
             }
             else
             {
