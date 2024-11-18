@@ -49,7 +49,7 @@ namespace Unity.FPS.Gameplay
         [Header("Damage")] [Tooltip("Damage of the projectile")]
         public float Damage = 40f;
 
-        [Tooltip("Area of damage. Keep empty if you don<t want area damage")]
+        [Tooltip("Area of damage. Keep empty if you don't want area damage")]
         public DamageArea AreaOfDamage;
 
         [Header("Debug")] [Tooltip("Color of the projectile radius debug view")]

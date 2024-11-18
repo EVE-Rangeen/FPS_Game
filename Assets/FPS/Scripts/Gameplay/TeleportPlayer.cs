@@ -21,14 +21,21 @@ namespace Unity.FPS.Gameplay
         {
             if (Input.GetKeyDown(ActivateKey))
             {
-                m_PlayerCharacterController.transform.SetPositionAndRotation(transform.position, transform.rotation);
-                Health playerHealth = m_PlayerCharacterController.GetComponent<Health>();
-                if (playerHealth)
-                {
-                    playerHealth.Heal(999);
-                }
+                TeleportToPosition(transform.position, transform.rotation);
             }
         }
 
+        public void TeleportToPosition(Vector3 position, Quaternion rotation)
+        {
+            m_PlayerCharacterController.transform.SetPositionAndRotation(position, rotation);
+            m_PlayerCharacterController.GetComponent<Rigidbody>().velocity = Vector3.zero; // 重置速度
+            m_PlayerCharacterController.GetComponent<Rigidbody>().angularVelocity = Vector3.zero; // 重置角速度
+
+            Health playerHealth = m_PlayerCharacterController.GetComponent<Health>();
+            if (playerHealth)
+            {
+                playerHealth.Heal(999);
+            }
+        }
     }
 }
